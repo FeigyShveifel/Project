@@ -1,0 +1,15 @@
+.widget-clock .digital{position:fixed;margin-right:10%;margin-bottom:0%;text-align:center;left:70%;stroke:#4545bb}
+.widget-clock .time{font-family:'Tipograf2Light',Tipograf2Black;font-size:400%;}
+.widget-clock .square{position:fixed;width:45%;height:0;padding-bottom:45%}
+.widget-clock svg{position:absolute;width:100%;height:100%;left:65%}
+.widget-clock .clock-face{stroke:#4545bb;fill:#4545bb;opacity:0;}
+.widget-clock .minor{stroke:#bb0000;stroke-width:0.7}
+.widget-clock .major{stroke:#dd0000;stroke-width:0.5}
+.widget-clock .hour{stroke:#990000}
+.widget-clock .minute{stroke:#990000}
+.widget-clock .second{stroke:#110011}
+.widget-clock .second-counterweight{stroke:#110011;stroke-width:2}
+.widget-clock.dark .clock-face{fill:#55ff88}
+.widget-clock.dark .hour{stroke:#990000}
+.widget-clock.dark .minute{stroke:#990000}
+/*# sourceMappingURL=angular-clock.css.map */

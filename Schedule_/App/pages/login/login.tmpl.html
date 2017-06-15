@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="../../../Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body dir="rtl" ng-app="loginApp">
+    <div class="container ng-scope">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 well">
+                <div role="form">
+                    <div class="form-group">
+                        <label for="name">שם:</label>
+                        <input ng-model="user.name" name="name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">סיסמא:</label>
+                        <input ng-model="user.password" name="password" type="password" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <button ng-disabled="!user.name" class="btn btn-primary" ng-click="login()">כניסה</button>
+                        <span ng-bind="spSuccess" class="label"
+                              ng-class="{'label-success': user.isSuccess , 'label-danger': !user.isSuccess }"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="header">
+
+                <react-component name="Hello" props="user" />
+                <small>
+                    <code>&lt;react-component name="Hello" props="user"/&gt;</code>
+                </small>
+
+
+                <div><hello fname="person.fname" lname="person.lname" /></div>
+                <small>
+                    <code>&lt;hello name="user.name" password="user.password"/&gt;</code>
+                </small>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="../../../Scripts/angular.js"></script>
+    <script src="../../../Scripts/angular-route.js"></script>
+    
+    
+    <script src="../../../Scripts/react/react.js"></script>
+    <script src="../../../Scripts/react/react-dom.js"></script>
+    <script src="../../../Scripts/react/ngReact.js"></script>
+    <script src="../app.js"></script>
+<script src="../app.route.js"></script>
+    <script src="login.js"></script>
+    <script src="../index.ctrl.js"></script>
+  
+</body>
+</html>

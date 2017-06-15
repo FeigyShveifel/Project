@@ -1,0 +1,23 @@
+﻿
+
+<div>
+    <input type="button" class="btn btn-primary" ng-click="TableLoadMonth()" value="Detailes" ng-disabled="month==false" />
+    <input type="number" ng-change="TableLoadMonth()" ng-model="txt" />
+    <table class="table" ng-if="show==true">
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+            <th>Sum</th>
+        </tr>
+        <tbody ng-repeat="item in Arr">
+            <tr>
+                <td class="td">{{item.date|date:'MM/dd EEEE'}}</td>
+                <td class="td">{{item.time|date:'hh:ss'}}</td>
+                <td class="td">{{item.status}}</td>
+                <td class="td">{{item.sumhour}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,124 @@
+﻿body {
+   background-color:rgba(128, 128, 128, 0.16);
+
+.button{
+    border-radius:10px;
+      font-family: cursive;
+background:white;
+width:30%;
+height:60px;
+font-size:20px;
+border-bottom:groove;
+color:green
+}
+button:hover {
+    background:rgb(37, 190, 226);
+    color:white;
+    border-bottom:solid;
+}
+button:disabled:hover {
+    color:red;
+    background:white;
+    
+}
+button:disabled {
+    border-radius:10px;
+      font-family: cursive;
+background:white;
+width:30%;
+height:60px;
+font-size:20px;
+border-bottom:groove;
+color:gray
+}
+
+
+.buttonTimePicker {
+     border-radius:10px;
+      font-family: cursive;
+background:white;
+width:100px;
+height:50px;
+font-size:20px;
+border-bottom:groove;
+color:green
+}
+h1{text-align:center;
+   color:turquoise;
+}
+    buttonTimePicker:hover {
+        background:rgb(37, 190, 226);
+    color:white;
+    border-bottom:solid;
+    }
+    th{
+        color:rgb(37, 190, 226);
+    }
+    #canvas{
+            background-color:transparent;
+                margin-top:30px;
+            float:right;
+           }
+.td {
+    border-left-color:black;
+    color:rgb(128, 128, 128);
+}
+.message {
+    color:gray;
+    font-family: cursive;
+    font-size:24px;
+background-color:turquoise; 
+text-align:center;  
+}
+   /*הגדרות לקלאס של האנימציה*/
+.animate-repeat {
+            width: 200px;
+            height: 50px;
+            border: rgb(185, 1, 1);
+            color:white;
+            opacity:0;
+        }
+        /* כניסת אנימציה*/
+.animate-repeat.ng-enter {
+                 transition-delay: 1s;
+                transition: 3s;/*מספר שניות*/
+                opacity: 1;
+                
+            }
+            /*במהלך כניסת האנימציה*/
+.animate-repeat.ng-enter-active {
+                opacity: 0;
+                color: white;
+            }
+.myFadeAnimation {
+    margin-top: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.00);
+    position: relative;
+    width: 60%;
+    height:130px;
+left: 5%;
+}
+
+.myFadeAnimation.ng-enter {
+        transition: 1s linear all;
+        opacity: 0;
+        left: -40%;
+    }
+
+        /* The starting CSS styles for the enter animation */
+.myFadeAnimation.ng-enter.ng-enter-active {
+            opacity: 1;
+            left: 5%;
+        }
+
+.myFadeAnimation.ng-leave {
+        transition: 3s linear all;
+        opacity: 1;
+        left: 5%;
+    }
+
+.myFadeAnimation.ng-leave.ng-leave-active {
+            opacity: 0;
+            left: -40%;
+        }
+}

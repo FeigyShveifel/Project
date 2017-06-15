@@ -1,0 +1,39 @@
+﻿<div>
+    <div>
+        <input type="button" class="btn btn-primary" ng-disabled="Enter==true" ng-click="Exit=false; isEnter=true;" value="signin enter" />
+        <input type="button" class="btn btn-primary" ng-disabled="Enter==false" ng-click="Exit=true; isEnter=true" value="signin exit" />
+    </div>
+    <br />
+    <br />
+    <div style="height:100%">
+        <div style="margin-left:2%;">
+            <!--ng-if="show==true"--> <div  style="width:80%;background-color:dimgrey;height:50px; margin-top:30px;">
+                <div class="header">
+
+    <react-component name="Hello" props="worker" />
+    <small>
+        <code>&lt;react-component name="Hello" props="worker"/&gt;</code>
+    </small>
+
+
+    <div><hello sumh="worker.sumh"  /></div>
+    <small>
+        <code>&lt;hello sumh="worker.sumh"/&gt;</code>
+    </small>
+
+</div> 
+            </div>
+        </div>
+        <div class="myFadeAnimation" ng-if="isEnter==true">
+            <div class="message" style="color:black;">
+                <br />
+                <div ng-if="Enter==false" style="color:black;">good morning, have a nice day!!</div>
+                <br />
+            </div>
+            <br />
+            <time-Drv ng-if="isEnter==true" timetype="enterTime" timefunction="SaveEnter(enterTime)"></time-Drv>
+        </div>
+
+
+    </div>
+</div>
